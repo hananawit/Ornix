@@ -27,27 +27,28 @@ export default function Sectors() {
     ];
 
     return (
-        <div className="min-h-screen bg-background pb-32">
-            <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border">
-                <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen bg-background pb-24">
+            <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border relative overflow-hidden">
+                <div className="hero-circuit" />
+                <div className="max-w-[1600px] mx-auto">
                     <h1 className="text-5xl sm:text-6xl font-light text-foreground tracking-tight mb-8">
-                        Sectors We <span className="text-primary font-medium">Serve</span>
+                        Sectors We <span className="text-secondary font-medium">Serve</span>
                     </h1>
-                    <p className="text-xl text-muted max-w-3xl font-normal leading-relaxed">
+                    <p className="text-xl text-muted max-w-[1200px] font-normal leading-relaxed">
                         Our solutions are tailored to the unique needs of diverse sectors, delivering sustainable value in an increasingly data-driven world.
                     </p>
                 </div>
             </section>
 
-            <section className="py-32 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
+            <section className="py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[1600px] mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
                         {sectors.map((sector, index) => (
                             <div
                                 key={index}
-                                className="group p-16 bg-background rounded-3xl border border-border hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 text-center relative overflow-hidden"
+                                className="group p-16 bg-background rounded-3xl border border-border hover:border-secondary/50 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-500 text-center relative overflow-hidden"
                             >
-                                <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                                <div className="absolute inset-0 bg-secondary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                                 <div className="relative z-10">
                                     <div className="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500">{sector.icon}</div>
                                     <h3 className="text-2xl font-medium text-foreground tracking-tight">
@@ -60,15 +61,15 @@ export default function Sectors() {
                 </div>
             </section>
 
-            <section className="py-32 px-4 sm:px-6 lg:px-8 bg-surface">
+            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-4xl font-light text-foreground mb-16 text-center">
-                        Frequently Asked <span className="text-primary font-medium">Questions</span>
+                        Frequently Asked <span className="text-secondary font-medium">Questions</span>
                     </h2>
                     <div className="space-y-8">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-background p-8 rounded-2xl border border-border shadow-soft group hover:border-primary/20 transition-all duration-300">
-                                <h3 className="text-xl font-medium text-foreground mb-4 group-hover:text-primary transition-colors">
+                            <div key={index} className="bg-background p-8 rounded-2xl border border-border shadow-soft group hover:border-secondary/40 transition-all duration-300">
+                                <h3 className="text-xl font-medium text-foreground mb-4 group-hover:text-secondary transition-colors">
                                     {faq.q}
                                 </h3>
                                 <p className="text-muted font-light leading-relaxed">

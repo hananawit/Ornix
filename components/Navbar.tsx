@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import logo from '@/assets/ornix 2.1.png';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +32,18 @@ export default function Navbar() {
             ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-soft'
             : 'bg-transparent'
             }`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-20">
+            <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12">
+                <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
-                        <Link href="/" className="group flex items-center gap-2">
-                            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center font-bold text-white group-hover:rotate-12 transition-transform duration-300">O</div>
+                        <Link href="/" className="group flex items-center gap-3">
+                            <div className="w-12 h-12 rounded-lg bg-background border border-border shadow-sm overflow-hidden flex items-center justify-center group-hover:rotate-6 transition-transform duration-300">
+                                <Image
+                                    src={logo}
+                                    alt="Ornix logo"
+                                    className="w-full h-full object-contain"
+                                    priority
+                                />
+                            </div>
                             <span className="text-2xl font-medium text-foreground tracking-tight">Ornix</span>
                         </Link>
                     </div>
@@ -45,13 +54,13 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`text-sm font-light tracking-wide transition-all duration-300 relative group ${pathname === link.href
-                                    ? 'text-primary font-medium'
-                                    : 'text-muted hover:text-foreground'
+                                className={`text-lg font-semibold tracking-wide transition-all duration-300 relative group ${pathname === link.href
+                                    ? 'text-secondary font-medium'
+                                    : 'text-muted hover:text-secondary'
                                     }`}
                             >
                                 {link.name}
-                                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${pathname === link.href ? 'w-full' : ''}`} />
+                                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full ${pathname === link.href ? 'w-full' : ''}`} />
                             </Link>
                         ))}
                     </div>
@@ -80,9 +89,9 @@ export default function Navbar() {
                                 key={link.name}
                                 href={link.href}
                                 onClick={() => setMobileMenuOpen(false)}
-                                className={`block py-3 px-4 text-sm font-light rounded-xl hover:bg-surface hover:translate-x-2 transition-all duration-300 ${pathname === link.href
-                                    ? 'text-primary font-medium bg-primary/5'
-                                    : 'text-muted hover:text-foreground'
+                                className={`block py-3 px-4 text-lg font-semibold rounded-xl hover:bg-surface hover:translate-x-2 transition-all duration-300 ${pathname === link.href
+                                    ? 'text-secondary font-medium bg-secondary/10'
+                                    : 'text-muted hover:text-secondary'
                                     }`}
                             >
                                 {link.name}

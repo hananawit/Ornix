@@ -33,28 +33,29 @@ export default function Services() {
     ];
 
     return (
-        <div className="min-h-screen bg-background pb-32">
-            <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border">
-                <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen bg-background pb-24">
+            <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border relative overflow-hidden">
+                <div className="hero-circuit" />
+                <div className="max-w-[1600px] mx-auto">
                     <h1 className="text-5xl sm:text-6xl font-light text-foreground tracking-tight mb-8">
-                        Our <span className="text-primary font-medium">Services</span>
+                        Our <span className="text-secondary font-medium">Services</span>
                     </h1>
-                    <p className="text-xl text-muted max-w-3xl font-normal leading-relaxed">
+                    <p className="text-xl text-muted max-w-[1200px] font-normal leading-relaxed">
                         We offer comprehensive AI and data services designed to empower organizations through intelligent, data-driven solutions.
                     </p>
                 </div>
             </section>
 
-            <section className="py-32 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
+            <section className="py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[1600px] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service) => {
                             const colors = [
-                                { border: 'hover:border-emerald/40', shadow: 'hover:shadow-emerald/5', iconBg: 'group-hover:bg-emerald/5', iconColor: 'text-emerald' },
-                                { border: 'hover:border-violet/40', shadow: 'hover:shadow-violet/5', iconBg: 'group-hover:bg-violet/5', iconColor: 'text-violet' },
-                                { border: 'hover:border-rose/40', shadow: 'hover:shadow-rose/5', iconBg: 'group-hover:bg-rose/5', iconColor: 'text-rose' },
-                                { border: 'hover:border-primary/40', shadow: 'hover:shadow-primary/5', iconBg: 'group-hover:bg-primary/5', iconColor: 'text-primary' },
-                                { border: 'hover:border-secondary/40', shadow: 'hover:shadow-secondary/5', iconBg: 'group-hover:bg-secondary/5', iconColor: 'text-secondary' },
+                                { border: 'hover:border-secondary/50', shadow: 'hover:shadow-secondary/15', iconBg: 'group-hover:bg-secondary/10', iconColor: 'text-secondary' },
+                                { border: 'hover:border-secondary/50', shadow: 'hover:shadow-secondary/15', iconBg: 'group-hover:bg-secondary/10', iconColor: 'text-secondary' },
+                                { border: 'hover:border-secondary/50', shadow: 'hover:shadow-secondary/15', iconBg: 'group-hover:bg-secondary/10', iconColor: 'text-secondary' },
+                                { border: 'hover:border-secondary/50', shadow: 'hover:shadow-secondary/15', iconBg: 'group-hover:bg-secondary/10', iconColor: 'text-secondary' },
+                                { border: 'hover:border-secondary/50', shadow: 'hover:shadow-secondary/15', iconBg: 'group-hover:bg-secondary/10', iconColor: 'text-secondary' },
                             ];
                             const theme = colors[service.id % colors.length];
 

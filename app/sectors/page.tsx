@@ -30,7 +30,7 @@ export default function Sectors() {
         <div className="min-h-screen bg-background pb-24">
             <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border relative overflow-hidden">
                 <div className="hero-circuit" />
-                <div className="max-w-[1600px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <h1 className="text-5xl sm:text-6xl font-light text-foreground tracking-tight mb-8">
                         Sectors We <span className="text-secondary font-medium">Serve</span>
                     </h1>
@@ -41,7 +41,7 @@ export default function Sectors() {
             </section>
 
             <section className="py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-[1600px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
                         {sectors.map((sector, index) => (
                             <div

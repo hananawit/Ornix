@@ -27,7 +27,7 @@ export default function Home() {
           <div className="absolute top-[18%] right-[18%] w-[22%] h-[22%] rounded-full bg-accent blur-[120px] opacity-30" />
         </div>
 
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <div className={`relative text-center max-w-4xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-light mb-8 leading-tight tracking-tight">
               Solve Smarter with{" "}
@@ -67,7 +67,7 @@ export default function Home() {
 
       {/* Highlights */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface">
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="group p-10 bg-background rounded-2xl border border-border hover:border-secondary/50 hover:shadow-xl hover:shadow-secondary/15 transition-all duration-500">
               <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">🔬</div>

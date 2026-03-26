@@ -49,7 +49,7 @@ export default function About() {
             {/* Header */}
             <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border relative overflow-hidden">
                 <div className="hero-circuit" />
-                <div className="max-w-[1600px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <h1 className="text-5xl sm:text-6xl font-light text-foreground tracking-tight mb-8">
                         About <span className="text-secondary font-medium">Ornix AI Solution</span>
                     </h1>
@@ -61,7 +61,7 @@ export default function About() {
 
             {/* Mission Content */}
             <section className="py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-[1600px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                         <div>
                             <h2 className="text-3xl font-medium text-foreground mb-8">Our Foundation</h2>
@@ -100,7 +100,7 @@ export default function About() {
 
             {/* Team + Mission/Vision */}
             <section className="py-20 px-6 sm:px-8 lg:px-12 bg-surface">
-                <div className="max-w-[1600px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-12 items-start mb-16">
                         <div className="animate-reveal-up">
                             <h2 className="text-3xl sm:text-4xl font-light text-foreground mb-6">

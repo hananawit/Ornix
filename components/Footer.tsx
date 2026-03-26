@@ -9,7 +9,7 @@ export default function Footer() {
             {/* Background Decorative Element */}
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 blur-[100px] -z-10 rounded-full translate-x-1/2 translate-y-1/2" />
 
-            <div className="max-w-[1600px] mx-auto">
+            <div className="max-w-[1200px] mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
                     {/* Brand Section */}
                     <div className="space-y-6">

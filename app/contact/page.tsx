@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="min-h-screen bg-background pb-24">
             <section className="bg-surface py-32 px-4 sm:px-6 lg:px-8 border-b border-border relative overflow-hidden">
                 <div className="hero-circuit" />
-                <div className="max-w-[1600px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <h1 className="text-5xl sm:text-6xl font-light text-foreground tracking-tight mb-8">
                         Contact <span className="text-secondary font-medium">Us</span>
                     </h1>
@@ -32,7 +32,7 @@ export default function Contact() {
             </section>
 
             <section className="py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
 
                     {/* Contact Info */}
                     <div className="space-y-12">

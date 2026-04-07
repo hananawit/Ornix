@@ -32,7 +32,7 @@ export default function Navbar() {
             ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-soft'
             : 'bg-transparent'
             }`}>
-            <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12">
+            <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-12">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
                         <Link href="/" className="group flex items-center gap-3">
